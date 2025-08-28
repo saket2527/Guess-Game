@@ -1,0 +1,111 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Game wrapper */
+#wrapper {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+/* Title */
+h1 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Instructions */
+p {
+    font-size: 15px;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Input field */
+#guessField {
+    padding: 10px;
+    width: 80%;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 2px solid #888;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Submit button */
+#subt {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#subt:hover {
+    background: #45a049;
+}
+
+/* Previous guesses and remaining attempts */
+.resultParas {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Message styles */
+.lowOrHi h2 {
+    margin-top: 15px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.lowOrHi h2:empty {
+    display: none;
+}
+
+/* Correct guess */
+.lowOrHi h2:contains("right") {
+    background: #d4edda;
+    color: #155724;
+    border: 2px solid #c3e6cb;
+}
+
+/* Wrong guess */
+.lowOrHi h2:contains("low"),
+.lowOrHi h2:contains("high") {
+    background: #f8d7da;
+    color: #721c24;
+    border: 2px solid #f5c6cb;
+}
+
+/* Restart button */
+.button {
+    margin-top: 20px;
+    background: #007BFF;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background: #0056b3;
+}
